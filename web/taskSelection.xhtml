@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/ui">
+    <h:head>
+        <title>list</title>
+    </h:head>
+    <h:body>
+        <p:layout fullPage="true">
+
+            <p:layoutUnit position="top" height="75" resizable="false" closable="false" collapsible="false">
+                <h:outputText value="Welcome~ #{userBean.username}" />
+            </p:layoutUnit>
+
+            <p:layoutUnit position="bottom" height="75" resizable="false" closable="false" collapsible="false">
+                <h:outputText value="All Rights Reserved by Me" />
+            </p:layoutUnit>
+
+            <p:layoutUnit position="left" width="200" resizable="false" closable="false" collapsible="false">
+                <h:outputText value="Task Menu" />
+            </p:layoutUnit>
+
+
+
+            <p:layoutUnit position="center">
+                <h:form>
+                    <h:panelGrid columns="1">
+                     <h:commandButton value="Update Employee Info" action="newProject.xhtml"/>
+                     <h:commandButton value="Manage Timesheets" action="newProject.xhtml"/>
+                     <h:commandButton value="Time Sheet" action="newProject.xhtml"/>
+                     <h:commandButton value="Manage Projects" action="list"/>
+
+
+                    </h:panelGrid>
+
+                </h:form>
+            </p:layoutUnit>
+        </p:layout>
+    </h:body>
+</html>
+
